@@ -1,0 +1,14 @@
+<body style="background-color: grey;">
+   
+<h1>Table showing name of instructors with their email id and the number of games they have created</h1>
+
+<table border = 1>
+   {% for user in userDetails %}
+   <tr>
+      <td>{{user[0]}}</td> 
+      <td>{{user[2]}}</td>
+      <td>{{user[3]}}</td>
+   </tr>
+   {% endfor %}
+</table>
+</body>
